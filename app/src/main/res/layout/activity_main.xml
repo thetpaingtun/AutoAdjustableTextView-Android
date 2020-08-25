@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frm"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <me.thet.autoadjustabletextview.AutoAdjustableTextView
+            android:id="@+id/adjTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="end|center_vertical"
+            android:text=""
+            android:textSize="70sp"
+            app:adj_min_text_size="30sp" />
+
+    </FrameLayout>
+
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frm">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="7"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="9"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+        <!-- 2nd row -->
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="4"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="5"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="6"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <!--        3rd row-->
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="x"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <!--        4th row-->
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size" />
+
+        <TextView
+            android:id="@+id/txt16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+
+            android:text="DEL"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
