@@ -1,12 +1,10 @@
 package me.thet.autoadjustabletextview
 
 import android.content.Context
-import android.graphics.Canvas
 import android.text.method.ScrollingMovementMethod
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.Gravity
-import me.thet.autoadjustabletextview.Logger.log
 import kotlin.IllegalArgumentException
 
 
@@ -21,7 +19,8 @@ class AutoAdjustableTextView @JvmOverloads constructor(
 
 
     private var afterMeasured: Boolean = false
-    private val SHRNK_PERCENTAGE = 0.2f
+    private val RESIZE_PERCENTAGE = 0.2f
+
 
     //text sizes are in px
     private val maxTextSize: Float
@@ -43,7 +42,11 @@ class AutoAdjustableTextView @JvmOverloads constructor(
         ).apply {
 
             try {
-                minTextSize = getDimension(R.styleable.AutoAdjustableTextView_adj_min_text_size, 0f)
+                minTextSize =
+                    getDimension(
+                        R.styleable.AutoAdjustableTextView_adj_min_text_size,
+                        context.sp(10f)
+                    )
             } finally {
                 recycle()
             }
@@ -65,7 +68,7 @@ class AutoAdjustableTextView @JvmOverloads constructor(
         var cur = maxTextSize
         while (cur > minTextSize) {
             sizes.add(cur)
-            cur = cur - (cur * SHRNK_PERCENTAGE)
+            cur = cur - (cur * RESIZE_PERCENTAGE)
         }
         return sizes
     }
@@ -121,6 +124,7 @@ class AutoAdjustableTextView @JvmOverloads constructor(
         if (tSize != null) {
             paint.textSize = tSize;
         }
+
 
         val width = paint.measureText(text.toString())
 

@@ -21,7 +21,7 @@
             android:layout_gravity="center_vertical"
             android:gravity="end|center_vertical"
             android:text=""
-            android:textSize="70sp"
+            android:textSize="100sp"
             app:adj_min_text_size="30sp" />
 
     </FrameLayout>
